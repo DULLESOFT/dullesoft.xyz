@@ -94,7 +94,7 @@ h1 {
 }
 
 .links a:link {
-  color: #e6e1c8;
+    color: #e6e1c8;
 }
 
 .links a:unvisited {
@@ -108,6 +108,7 @@ h1 {
 
 .links a.active {
     color: #2fbed8;
+    text-decoration: underline;
     pointer-events: none;
 }
 
