@@ -18,7 +18,7 @@
 body {
     font-family: 'NopeEng', 'VoiceEng', sans-serif;
     margin: 0;
-    padding: 10vh 0 0 0;
+    padding: 10vh 10vw 0 10vw;
     background-color: #1d151b;
     color: #e6e1c8;
     display: flex;
@@ -38,13 +38,13 @@ body {
 }
 
 .screenshot {
-    width: 720px;
+    width: 480px;
     height: auto;
     display: block;
 }
 
 .video-bg {
-    width: 720px;
+    width: 480px;
     height: auto;
     pointer-events: none;
 }
@@ -82,7 +82,7 @@ h1 {
 .links a {
     font-size: 2.4rem;
     display: inline-block;
-    margin: 0 1.5rem;
+    margin: 0 1.2rem;
     text-decoration: none;
     font-weight: bold;
     margin-bottom: 5rem;
