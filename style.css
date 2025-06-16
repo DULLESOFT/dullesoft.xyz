@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'NopeEng';
+    src: url('fonts/Nope6p.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF, U+2000-206F, U+20A0-20CF, U+2100-214F;
+}
+
+@font-face {
+    font-family: 'VoiceEng';
+    src: url('fonts/Voice7h.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF, U+2000-206F, U+20A0-20CF, U+2100-214F;
+}
+
+
+body {
+    font-family: 'NopeEng', 'VoiceEng', sans-serif;
+    margin: 0;
+    padding: 10vh 0 0 0;
+    background-color: #1d151b;
+    color: #e6e1c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 360px;
+    height: auto;
+    display: block;
+}
+
+.logo:hover {
+    content: url("images/mintybyte_logo_anim.gif");
+}
+
+.screenshot {
+    width: 720px;
+    height: auto;
+    display: block;
+}
+
+.video-bg {
+    width: 720px;
+    height: auto;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: 'VoiceEng';
+    font-size: 2.4rem;
+    color: #e6e1c8;
+}
+
+.p1 {
+    font-size: 1.6rem;
+    color: #e6e1c8;
+    letter-spacing: 0.03em;
+}
+
+.p2 {
+    font-size: 1.6rem;
+    color: #535b73;
+    letter-spacing: 0.03em;
+}
+
+.p3 {
+    font-size: 1.6rem;
+    color: #2fbed8;
+    letter-spacing: 0.03em;
+}
+
+.p5 {
+    font-size: 1.2rem;
+    color: #2fbed8;
+    letter-spacing: 0.02em;
+}
+
+.links a {
+    font-size: 2.4rem;
+    display: inline-block;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.links a:visited {
+    color: #e6e1c8;
+    text-decoration: none;
+}
+
+.links a:link {
+  color: #e6e1c8;
+}
+
+.links a:unvisited {
+    color: #e6e1c8;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #2fbed8;
+}
+
+.links a.active {
+    color: #2fbed8;
+    pointer-events: none;
+}
+
+.fancy-text {
+    display: inline-block;
+    animation: waveUpColor 1s ease-in-out infinite;
+}
+
+@keyframes waveUpColor {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        color: #e6e1c8;
+    }
+
+    50% {
+        transform: translateY(-4px);
+        color: #2fbed8;
+    }
+}
