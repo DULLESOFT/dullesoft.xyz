@@ -108,8 +108,19 @@ h1 {
 
 .links a.active {
     color: #2fbed8;
-    text-decoration: underline;
+    text-decoration: none;     /* 기존 underline 제거 */
+    position: relative;        /* 가상 요소 배치 기준 */
     pointer-events: none;
+}
+
+.links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0.4%;                  /* 왼쪽으로 치우치게 */
+    bottom: 0.1rem;              /* 글자 아래 위치 조절 */
+    width: 96%;                /* 선 길이 (100%보다 짧게) */
+    height: 0.12rem;               /* 선 두께 */
+    background-color: #2fbed8; /* 선 색상 */
 }
 
 .fancy-text {
